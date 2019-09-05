@@ -1,0 +1,11 @@
+Below are some terminal commands that you may find yourself using in class this semester:
+
+
+pwd: "print working directory"
+cd: "change directory"
+TAB: autocompletes what you're typing, if there is an unambiguous file/folder by that name in your current directory.
+ls: list information about files
+pip: stands for "preferred installer program".  Used for installing new packages through terminal (e.g., pip install virtualenv)
+rm: USE WITH CAUTION. This will delete a file/directory.
+help: issued after a terminal command to see its documentation
+clear: clears the terminal to a clean slate

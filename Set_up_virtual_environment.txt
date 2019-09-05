@@ -1,0 +1,10 @@
+Set up a virtual environment for Python development
+
+1. Open terminal/cmd prompt
+2. run: pip install virtualenv (this will install the software to be able to install virtual environments.  You may get the message that this requirement has already been satisfied, which means that you can move on to the next step)
+3. navigate to the directory you want to install the virtual environment in (e.g. cd [directory])
+4. to install a new virtual environment, run the following: virtualenv [name] ([name] is whatever you want to name it)
+5. to run your new environment, issue this command: source [venv name]/bin/activate
+
+----
+6. to deactivate the environment, run: deactivate
