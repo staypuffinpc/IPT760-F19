@@ -1,0 +1,7 @@
+Classes (Day 4)
+
+1. class creation
+2. __init__() function
+3. basic properties (fields)
+4. public methods
+5. private methods
