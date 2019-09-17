@@ -5,3 +5,4 @@ Classes (Day 4)
 3. basic properties (fields)
 4. public methods
 5. private methods
+6. importing a class file
