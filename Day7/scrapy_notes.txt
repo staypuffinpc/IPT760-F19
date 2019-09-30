@@ -1,0 +1,25 @@
+
+
+## TERMINAL COMMANDS ##
+# start a new scrapy project with the following scrapy command: scrapy startproject learning
+# to start the shell: scrapy shell [url]
+  NOTE:(it's good to test your code in the shell so you can later put it in your class file.)
+# to output data to a json file using scrapy terminal: scrapy crawl [object] -o quotes.json
+# to incrementally add to a json-type file, use the .jl extension (jason lines): scrapy crawl [object] -o quotes.jl
+# to run a file, use the following command in your terminal: scrapy crawl quotes (where "quotes" is the name you gave the object)
+
+
+## SEARCHING THE DOM (i.e., generated HTML elements) ##
+to get a specific html element with class 'title' : response.css("title")
+# 2. to get a specific html element with class 'title' : response.css("title")
+# 3. to get just the text of the element with class 'title' : response.css("title::text")
+# 4. to get all the elements of a particular class: response.css("tag::text").getall()
+# 6. to drill down the DOM: response.css("div.tags a.tag").getall()
+# 9. to get html attributes: response.css("li.next a::attr(href)").get() or response.css("li.next a").attrib["href"]
+
+## SHELL COMMANDS ##
+# to exit shell: ctrl-z
+# to create a variable: [varname] = response.css("div.quote").get()
+# view(response) : this will get all the html generated from the response
+# To follow a relative link use response.follow: yield response.follow(next_page, callback = self.parse)
+# To create an absolute path, use urljoin() and call scrapy.Requests() again.

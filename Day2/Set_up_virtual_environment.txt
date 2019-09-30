@@ -9,3 +9,4 @@ Set up a virtual environment for Python development
 
 ----
 6. to deactivate the environment, run: deactivate
+w
