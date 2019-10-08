@@ -72,7 +72,7 @@ driver.get("https://y.byu.edu/ry/ae/prod/class_schedule/cgi/instructorSchedule.c
 # click on the "class roll" link
 link = driver.find_elements_by_xpath('//*[@id="Content"]/table[2]//a')
 # //*[@id="Content"]/table[2]//td[21]/a
-link[2].click()
+link[0].click()
 
 time.sleep(3)
 #now a new window should be open.  Navigate to that window if not already There.  Should be 'classRoll'
@@ -132,7 +132,7 @@ else:
 ## 3. for each dict in the list, download the img at url and name it name
 from pathlib import Path #this will allow me to create paths that can be read on mac or windows!
 data_folder = Path(new_path)
-
+time.sleep(1)
 for i in range(len(students)):
     try:
         this_student = students[i][1]+".png"
